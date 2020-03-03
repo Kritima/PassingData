@@ -10,10 +10,22 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+    @IBOutlet weak var lblWelcome: UILabel!
+    
+    var name: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        if let nm = name
+        {
+            self.lblWelcome.text = "Welcome, \(nm)"
+        }
+        else
+        {
+            self.lblWelcome.text = "No Name Sent From First VC"
+        }
+        
     }
     
 

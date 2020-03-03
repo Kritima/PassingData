@@ -9,12 +9,28 @@
 import UIKit
 
 class FirstViewController: UIViewController {
-
+    
+    @IBOutlet weak var txtName: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view.
     }
-
-
+    
+    
+    @IBAction func btnGoNext(_ sender: UIButton) {
+        
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let secondVC = sb.instantiateViewController(identifier: "secondVC") as! SecondViewController
+        
+        if let name = self.txtName.text
+        {
+            secondVC.name = name
+            
+            self.navigationController?.pushViewController(secondVC, animated: true)
+        }
+}
 }
 

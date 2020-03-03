@@ -27,6 +27,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
+                                    <action selector="btnGoNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hB0-8W-G3S"/>
                                     <segue destination="RMj-cX-N3X" kind="show" id="dX7-72-seW"/>
                                 </connections>
                             </button>
@@ -35,6 +36,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="yzF-A9-S3z"/>
+                    <connections>
+                        <outlet property="txtName" destination="Qra-Sl-JIG" id="J6c-io-CLp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -43,7 +47,7 @@
         <!--Second View Controller-->
         <scene sceneID="mCz-d9-d1H">
             <objects>
-                <viewController id="RMj-cX-N3X" customClass="SecondViewController" customModule="PassingData" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="secondVC" id="RMj-cX-N3X" customClass="SecondViewController" customModule="PassingData" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HJ7-U7-nlq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -55,18 +59,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TRW-jp-Zal">
-                                <rect key="frame" x="87" y="363" width="222" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Ib5-x9-HnK"/>
                     </view>
                     <navigationItem key="navigationItem" id="94L-9C-NvA"/>
+                    <connections>
+                        <outlet property="lblWelcome" destination="nSu-xc-yXu" id="Wwk-aL-hsa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RVD-FE-iid" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
