@@ -29,7 +29,9 @@ class FirstViewController: UIViewController {
         {
             secondVC.name = name
             
-            self.navigationController?.pushViewController(secondVC, animated: true)
+           self.navigationController?.pushViewController(secondVC, animated: true)
+           self.navigationItem.hidesBackButton=true;
+           // self.present(secondVC, animated: true, completion: nil)
         }
 }
 }

@@ -26,6 +26,7 @@ class SecondViewController: UIViewController {
             self.lblWelcome.text = "No Name Sent From First VC"
         }
         
+        self.navigationItem.hidesBackButton=true;
     }
     
 

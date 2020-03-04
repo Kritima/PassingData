@@ -28,7 +28,6 @@
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="btnGoNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hB0-8W-G3S"/>
-                                    <segue destination="RMj-cX-N3X" kind="show" id="dX7-72-seW"/>
                                 </connections>
                             </button>
                         </subviews>
