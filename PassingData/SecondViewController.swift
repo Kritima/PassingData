@@ -29,6 +29,18 @@ class SecondViewController: UIViewController {
         self.navigationItem.hidesBackButton=true;
     }
     
+    func addCloseButton()
+    {
+        let btnClose = UIBarButtonItem(title: "Close", style: .plain ,target: self, action: #selector(self.goBack))
+        
+        self.navigationItem.rightBarButtonItem = btnClose
+        
+    }
+    
+    @objc func goBack()
+    {
+        self.navigationController?.popViewController(animated: true)
+    }
 
     /*
     // MARK: - Navigation
