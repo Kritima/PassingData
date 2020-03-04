@@ -26,7 +26,8 @@ class SecondViewController: UIViewController {
             self.lblWelcome.text = "No Name Sent From First VC"
         }
         
-        self.navigationItem.hidesBackButton=true;
+        self.navigationItem.hidesBackButton=true
+        addCloseButton()
     }
     
     func addCloseButton()
